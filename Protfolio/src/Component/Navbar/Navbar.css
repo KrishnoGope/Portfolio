@@ -1,0 +1,77 @@
+.navbar {
+    background: black;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo */
+.logo {
+    width: 40px;
+    transition: transform 0.3s ease-in-out;
+    margin-right: 12vh;
+    margin-left: 6vh;
+    border: #27d93c;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #27d93c !important; 
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 5px; /* Ensures space for the underline */
+}
+
+.navbar-nav .nav-link::after {
+    content: "";  
+    position: absolute;
+    left: 50%;  
+    bottom: 0;  
+    width: 0;  
+    height: 3px; /* Thickness of the underline */
+    background: #ff8a00; /* Color of the underline */
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff8a00 !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Expands on hover */
+}
+
+/* Navbar Toggle Button */
+.custom-toggler {
+    border: none;
+    background: none;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='white'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 30px;
+    height: 30px;
+}
+/* Keep Connect With Me Button Same */
+.btn-lg {
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-lg:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .nav-link {
+        padding: 10px;
+        font-size: 18px;
+    }
+}

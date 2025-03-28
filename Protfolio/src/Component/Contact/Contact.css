@@ -1,0 +1,29 @@
+.contact_form{
+    padding: 80px 100px;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #192540, #1e293b);
+    color: #fff;
+}
+.contact_form h1{
+    background: linear-gradient(270deg, #DF8908 50.41%, #cf42bc 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    padding-bottom: 5vh;
+}
+.SendMessage{
+    background: linear-gradient(270deg, #9f6105 50.41%, #cf42bc 90.25%);
+    padding: 2%;
+    font-weight: 500;
+    color: white;
+    border-radius: 5vh;
+    border: none;
+    width: 95%;
+    font-size: 17px;
+}
+.SendMessage:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    border: none;
+}

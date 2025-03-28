@@ -1,0 +1,94 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 45px 100px;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #192540, #1e293b);
+  color: #fff;
+  box-sizing: border-box; /* Ensure padding does not cause overflow */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.mywork-title h1 {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(270deg, #DF8908 50.41%, #cf42bc 90.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mywork-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  max-width: 100%;
+  border:  3px solid #087c4a;
+}
+
+.mywork-container img:hover {
+  transform: scale(1.10);
+  border: 3px solid #cd06cd;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.mywork-showmore {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  border: 2px solid rgb(15, 102, 73);
+  padding: 10px 25px;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #DF8908 50.41%, #cf42bc 90.25%);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.mywork-showmore:hover {
+  gap: 20px;
+}
+
+.mywork-showmore img {
+  width: 50px;
+  height: 35px;
+}
+
+
+@media (max-width: 480px) {
+  .mywork {
+    margin: 0;
+    padding: 5%;
+  }
+
+  .mywork-title h1 {
+    font-size: 32px;
+  }
+
+  .mywork-showmore {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  .mywork-showmore img {
+    width: 40px;
+    height: 28px;
+  }
+
+  .mywork-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Ensure single column layout for mobile */
+    gap: 15px;
+  }
+
+  .mywork-container img {
+    width: 100%; /* Make sure the image is responsive */
+  }
+}
